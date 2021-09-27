@@ -1,0 +1,12 @@
+.card-container {
+  width: 90%;
+  display: flex;
+  margin: auto;
+  column-gap: 40px;
+}
+
+@media (max-width: 899px) {
+  .card-container {
+    flex-direction: column;
+  }
+}

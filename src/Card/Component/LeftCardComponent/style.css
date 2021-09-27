@@ -1,0 +1,58 @@
+.card-left-container {
+  width: 50%;
+}
+
+.card-left-image-container {
+  grid-template-columns: 48% 48%;
+  display: grid;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+}
+
+.card-left-big-image, .card-left-image{
+  object-fit: cover;
+  width:100%
+}
+.card-left-image-animation {
+  animation: fadeinout 3s linear forwards;
+}
+
+.card-left-image {
+  height: 22vh;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.card-left-image:hover {
+  filter: brightness(130%);
+}
+
+.card-left-big-image {
+  height: 46vh;
+  margin-bottom: 1.5rem;
+}
+
+@keyframes fadeinout {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+
+@media (max-width: 899px) {
+  .card-left-container {
+    width:100%
+  }
+}
+
+@media (max-width: 420px) {
+  .card-left-image-container {
+    grid-template-columns: auto;
+  }
+}
